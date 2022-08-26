@@ -24,8 +24,10 @@ public class MainActivity extends AppCompatActivity {
         EditText editTextMarca = findViewById(R.id.marca);
         EditText editTextQuantidade = findViewById(R.id.quantidade);
         Button btnSalvar = findViewById(R.id.salvar);
+
         ListView listViewProdutos = findViewById(R.id.lista);
         List<Produto> listaProdutos = new ArrayList<>();
+
         ArrayAdapter adapter;
         adapter = new ArrayAdapter(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, listaProdutos);
 
